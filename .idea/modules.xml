@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/.idea/Test_Open_Ai.iml" filepath="$PROJECT_DIR$/.idea/Test_Open_Ai.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/HomeWork.iml" filepath="$PROJECT_DIR$/.idea/HomeWork.iml" />
+>>>>>>> bf5ddf0f65e7138e7b1e856e58b79fd2efe5a528
+    </modules>
+  </component>
+</project>

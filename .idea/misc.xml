@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Black">
+<<<<<<< HEAD
+    <option name="sdkName" value="Python 3.13 (Test_Open_Ai)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 (Test_Open_Ai)" project-jdk-type="Python SDK" />
+=======
+    <option name="sdkName" value="Python 3.13 (HomeWork)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 (HomeWork)" project-jdk-type="Python SDK" />
+>>>>>>> bf5ddf0f65e7138e7b1e856e58b79fd2efe5a528
+</project>
