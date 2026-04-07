@@ -30,6 +30,8 @@
 #     if i == 3:
 #         break
 # print(f"吃完第 {i} 个包子")
+
+
 for peach in range(1, 11):
 	if peach == 4:
 		continue
@@ -41,3 +43,4 @@ print(f"吃完第 {peach} 个桃子")
 
 # for i in range(1,10):
 #     print(i)
+
