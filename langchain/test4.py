@@ -16,6 +16,7 @@ from typing_extensions import Annotated
 #
 #     return a+b
 
+#————————————————————————————————————————————————————————————————————————————————————————————————————————
 # 第二种
 # class AddInput(BaseModel):
 #     """
@@ -34,6 +35,7 @@ from typing_extensions import Annotated
 #
 #         return a+b
 
+#————————————————————————————————————————————————————————————————————————————————————————————————————————
 # 第三种：
 @tool
 def my_add(
