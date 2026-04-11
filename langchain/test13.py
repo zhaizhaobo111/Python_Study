@@ -2,6 +2,10 @@ from typing import Iterator, List
 
 from langchain_community.chat_models import ChatTongyi
 from langchain_core.output_parsers import StrOutputParser
+# import os
+#
+# os.environ["LANGSMITH_API_KEY"] = "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"
+# os.environ["LANGSMITH_TRACING"] = "true"
 
 #定义  模型
 model=ChatTongyi(model="qwen-max",api_key="sk-3b066661f42f49c9971861631950c710")
@@ -23,5 +27,5 @@ def split_into_list(input: Iterator[str]) -> Iterator[List[str]]:
             yield [buffer.strip()]
 
 chain=model|parser| split_into_list
-for chunk in chain.stream("请将一个故事，50字"):
+for chunk in chain.stream("请写一首诗描述天气"):
     print(chunk,end="|",flush=True)
