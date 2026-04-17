@@ -19,4 +19,5 @@ parser=StrOutputParser()
 # 5.定义langchain
 chain=model|parser
 print(chain.invoke(messages))
+# model.invoke()
 
