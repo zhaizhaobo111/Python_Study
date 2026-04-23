@@ -1,4 +1,4 @@
-"""个智能的⽂档问答系统"""
+"""智能的⽂档问答系统(基于 LangGraph 实现的代理式 RAG（检索增强⽣成）系统)"""
 from langchain_community.chat_models import ChatTongyi
 from langchain_community.document_loaders import UnstructuredMarkdownLoader
 from langchain_core.messages import HumanMessage, filter_messages
