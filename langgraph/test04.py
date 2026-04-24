@@ -1,4 +1,4 @@
-#工作流的提示链模式
+""" 工作流的提示链模式"""
 # 1.定义输入模式-只包含用户的输入
 from typing import TypedDict
 

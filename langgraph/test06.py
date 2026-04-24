@@ -1,3 +1,4 @@
+"""协调者-⼯作者模式（Orchestrator-Workers）"""
 import operator
 from typing import TypedDict, Annotated, List
 
