@@ -50,3 +50,8 @@ workflows=builder.compile()
 result = workflows.invoke({"combine_results": "城市通勤智能电动⾃⾏⻋"})
 print(result["report"])
 
+with open("../Docs/pdf/graph2.png", "wb") as f:
+    f.write(workflows.get_graph().draw_mermaid_png())
+
+
+
