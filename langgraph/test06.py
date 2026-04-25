@@ -96,7 +96,13 @@ builder.add_edge("work1","synthesizer")
 # 编译图
 worker=builder.compile()
 #
-response =worker.invoke({"topic": "ai发展史"})
-print(response)
-
+# response =worker.invoke({"topic": "ai发展史"})
+# print(response)
+try:
+    with open("../Docs/pdf/graph3.png", "wb") as f:
+        f.write(worker.get_graph().draw_mermaid_png())
+    print("流程图生成成功！路径：../Docs/pdf/graph3.png")
+except Exception as e:
+    print(f"流程图生成失败，原因：{str(e)}")
+    print("提示：请先创建 Docs/pdf 文件夹（上级目录下），再重新运行")
 
