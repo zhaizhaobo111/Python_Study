@@ -132,18 +132,18 @@ agent_search=agent_builder.compile()
 #  m.pretty_print()
 
 
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
-try:
-    # ⽣成 Mermaid 图表并保存为图⽚
-    mermaid_code = agent_search.get_graph(xray=True).draw_mermaid_png()
-    # 保存⽂件
-    with open("../Docs/graph1.jpg", "wb") as f:
-        f.write(mermaid_code)
-    #使⽤ matplotlib 显⽰图像
-    img = mpimg.imread("../Docs/graph1.jpg")
-    plt.imshow(img) # 显⽰图⽚
-    plt.axis('off') # 关闭坐标轴
-    plt.show() # 弹出窗⼝显⽰图⽚
-except Exception as e:
-    print(f"An error occurred: {e}")
+# import matplotlib.pyplot as plt
+# import matplotlib.image as mpimg
+# try:
+#     # ⽣成 Mermaid 图表并保存为图⽚
+#     mermaid_code = agent_search.get_graph(xray=True).draw_mermaid_png()
+#     # 保存⽂件
+#     with open("../Docs/graph1.jpg", "wb") as f:
+#         f.write(mermaid_code)
+#     #使⽤ matplotlib 显⽰图像
+#     img = mpimg.imread("../Docs/graph1.jpg")
+#     plt.imshow(img) # 显⽰图⽚
+#     plt.axis('off') # 关闭坐标轴
+#     plt.show() # 弹出窗⼝显⽰图⽚
+# except Exception as e:
+#     print(f"An error occurred: {e}")
