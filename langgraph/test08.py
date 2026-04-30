@@ -219,3 +219,18 @@ with PostgresSaver.from_conn_string(DB_URI) as checkpointer:
     # 重放（从指定的快照开始执行）
     # result=agent_search.invoke(None,config=to_replay.config)
     # print(result)
+
+
+# 根据指定的config，更新对于步骤的值
+# 更新⽤⼾输⼊
+# new_config = agent.update_state(
+# selected_state.config,
+# {"messages": Overwrite([HumanMessage(content="今天北京的天⽓如何？")])} # 清
+# 空消息，重新写⼊
+# )
+# print("-" * 80)
+# print(f"更新后配置：{new_config}")
+# # 第⼆次执⾏：重放更新后的配置
+# result2 = agent.invoke(None, config=new_config)
+# for message in result2['messages']:
+# message.pretty_print()

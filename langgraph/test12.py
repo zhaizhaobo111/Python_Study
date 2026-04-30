@@ -1,5 +1,4 @@
 from langchain.chat_models import init_chat_model
-from langchain_community.chat_models import ChatTongyi
 from langchain_core.messages import HumanMessage, RemoveMessage
 from langgraph.checkpoint.memory import InMemorySaver
 from langgraph.constants import START
@@ -57,3 +56,5 @@ graph.invoke({"messages": "now do the same but for dogs"}, config)
 final_response = graph.invoke({"messages": "what's my name?"}, config)
 final_response["messages"][-1].pretty_print()
 print("\nSummary:", final_response["summary"])
+for i in final_response["messages"]:
+    i.pretty_print()
