@@ -1,3 +1,4 @@
+"""验证人机输入"""
 from typing import TypedDict
 
 from langgraph.checkpoint.memory import InMemorySaver
