@@ -46,5 +46,7 @@ builder.add_edge("parent_node2",END)
 graph=builder.compile()
 # "这里是sub1和sub2" + state["sub2"] + state["sub1"]
 # print(graph.invoke({"parent":"主图"}))
-for chunk in graph.stream({"parent": "parent"}, subgraphs=True):
-    print(chunk)
+# for chunk in graph.stream({"parent": "parent"}, subgraphs=True):
+#     print(chunk)
+
+print(graph.get_graph(xray=True).draw_mermaid())
